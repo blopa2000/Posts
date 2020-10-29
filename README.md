@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Note
+
+create file in `src` with name `firebase.js` and add firebase credentials
+
+```
+  import firebase from "firebase/app";
+  import "firebase/firestore";
+
+  var firebaseConfig = {
+    apiKey: "AIxxxxxx",
+    authDomain: "reactxxxxxxxxxxxxxxxxxxxxxxxx",
+    databaseURL: "https://react-xxxxxxxxxxxxxxxx",
+    projectId: "react-firabase",
+    storageBucket: "reaxxxxxxxxxxxx",
+    messagingSenderId: "75xxxxxxxxxxxx",
+    appId: "1:75xxxxxxxxx",
+    measurementId: "Gxxxxxxxx",
+  };
+
+  const fb = firebase.initializeApp(firebaseConfig);
+  const db = fb.firestore();
+
+  export default db;
+
+```
