@@ -5,10 +5,16 @@ const useStyles = makeStyles((theme) =>
     root: {
       margin: "2em",
       [theme.breakpoints.down("285")]: {
-        margin: ".5em",
+        margin: ".5em 0",
         padding: ".5em",
         boxSizing: "border-box",
       },
+    },
+    divider: {
+      width: "90%",
+    },
+    typographyText: {
+      wordBreak: "break-all",
     },
     formStyle: {
       display: "flex",
@@ -16,6 +22,7 @@ const useStyles = makeStyles((theme) =>
       alignItems: "center",
       "& .MuiTextField-root": {
         margin: `${theme.spacing(1)}px 0`,
+        width: "45%",
       },
       "& .MuiInputBase-root": {
         borderRadius: "30px 30px",
