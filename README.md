@@ -76,6 +76,7 @@ create file in `src` with name `firebase.js` and add firebase credentials
 ```
   import firebase from "firebase/app";
   import "firebase/firestore";
+  import "firebase/storage";
 
   var firebaseConfig = {
     apiKey: "AIxxxxxx",
