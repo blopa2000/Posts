@@ -90,7 +90,8 @@ create file in `src` with name `firebase.js` and add firebase credentials
 
   const fb = firebase.initializeApp(firebaseConfig);
   const db = fb.firestore();
+  const storege = fb.storage();
 
-  export default db;
+  export { db, storege };
 
 ```
