@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) =>
         boxSizing: "border-box",
       },
     },
+    cardContent: {
+      padding: "0",
+    },
     divider: {
       width: "90%",
     },

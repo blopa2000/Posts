@@ -9,13 +9,12 @@ const Preview = ({ previewSource, description, email }) => {
   return (
     <Card className={classes.root}>
       <CardHeader title="Preview" />
-
-      <CardContent>
-        {previewSource && <img src={previewSource} alt="preview" width="100%" />}
-
+      <CardContent className={classes.cardContent}>
         <Typography variant="body2">
           <strong>Email:</strong> {email}
         </Typography>
+        {previewSource && <img src={previewSource} alt="preview" width="100%" />}
+
         <Typography variant="body2" className={classes.typographyText}>
           <strong>Description:</strong> {description}
         </Typography>

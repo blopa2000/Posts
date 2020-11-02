@@ -13,34 +13,9 @@ const useStyles = makeStyles((theme) =>
         boxSizing: "border-box",
       },
     },
-    divider: {
-      width: "90%",
-    },
-    typographyText: {
-      wordBreak: "break-all",
-    },
-    formStyle: {
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      "& .MuiTextField-root": {
-        margin: `${theme.spacing(1)}px 0`,
-        width: "45%",
-      },
-      "& .MuiInputBase-root": {
-        borderRadius: "30px 30px",
-      },
-    },
-    bullet: {
-      display: "inline-block",
-      margin: "0 2px",
-      transform: "scale(0.8)",
-    },
-    title: {
-      fontSize: 14,
-    },
-    pos: {
-      marginBottom: 12,
+    media: {
+      height: 0,
+      paddingTop: "56.25%", // 16:9
     },
   })
 );
