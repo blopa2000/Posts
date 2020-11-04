@@ -6,11 +6,11 @@ const PostsList = ({ post }) => {
   const classes = useStyle();
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.post} elevation={0}>
       <CardHeader title={post.email} />
       {post.images && <CardMedia className={classes.media} image={post.images} />}
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="textSecondary" component="p" className={classes.typographyText}>
           {post.description}
         </Typography>
       </CardContent>

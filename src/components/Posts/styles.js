@@ -13,6 +13,26 @@ const useStyles = makeStyles((theme) =>
         boxSizing: "border-box",
       },
     },
+    postListStyle: {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "center",
+      overflow: "scroll",
+      height: "100vh",
+    },
+    post: {
+      width: "20em",
+      border: "1px solid #d7d7d7",
+      margin: ".2em",
+      "& .MuiTypography-h5": {
+        [theme.breakpoints.down("xs")]: {
+          fontSize: ".6em",
+        },
+      },
+    },
+    typographyText: {
+      wordBreak: "break-all",
+    },
     media: {
       height: 0,
       paddingTop: "56.25%", // 16:9

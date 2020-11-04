@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { db } from "../../firebase";
 
 //materia ui
-import { Card, CardContent } from "@material-ui/core";
+import { Card } from "@material-ui/core";
 import useStyle from "./styles";
 
 //components
@@ -27,12 +27,12 @@ const Posts = () => {
   return (
     <>
       <Card className={classes.root}>
-        <CardContent>
-          <h1>Firebase</h1>
+        <h1>Firebase</h1>
+        <div className={classes.postListStyle}>
           {posts.map((post) => (
             <PostsList key={post.id} post={post} />
           ))}
-        </CardContent>
+        </div>
       </Card>
     </>
   );

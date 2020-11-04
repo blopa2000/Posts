@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) =>
     },
     typographyText: {
       wordBreak: "break-all",
+      padding: "0 1em",
     },
     formStyle: {
       display: "flex",

@@ -10,7 +10,7 @@ const Preview = ({ previewSource, description, email }) => {
     <Card className={classes.root}>
       <CardHeader title="Preview" />
       <CardContent className={classes.cardContent}>
-        <Typography variant="body2">
+        <Typography variant="body2" className={classes.typographyText}>
           <strong>Email:</strong> {email}
         </Typography>
         {previewSource && <img src={previewSource} alt="preview" width="100%" />}
