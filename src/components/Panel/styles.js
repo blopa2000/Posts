@@ -43,6 +43,10 @@ const useStyles = makeStyles((theme) =>
     pos: {
       marginBottom: 12,
     },
+    backdrop: {
+      zIndex: theme.zIndex.drawer + 1,
+      color: "#fff",
+    },
   })
 );
 

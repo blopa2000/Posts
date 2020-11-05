@@ -7,10 +7,15 @@ const PostsList = ({ post }) => {
 
   return (
     <Card className={classes.post} elevation={0}>
-      <CardHeader title={post.email} />
+      <CardHeader title={post.title} />
       {post.images && <CardMedia className={classes.media} image={post.images} />}
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p" className={classes.typographyText}>
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          component="p"
+          className={classes.typographyText}
+        >
           {post.description}
         </Typography>
       </CardContent>

@@ -27,7 +27,7 @@ const Posts = () => {
   return (
     <>
       <Card className={classes.root}>
-        <h1>Firebase</h1>
+        <h1>Post list</h1>
         <div className={classes.postListStyle}>
           {posts.map((post) => (
             <PostsList key={post.id} post={post} />

@@ -4,6 +4,9 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       margin: "2em 2em 2em 0",
+      "& h1": {
+        paddingLeft: "20px",
+      },
       [theme.breakpoints.down("sm")]: {
         margin: "0 2em",
       },
