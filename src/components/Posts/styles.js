@@ -21,7 +21,14 @@ const useStyles = makeStyles((theme) =>
       flexWrap: "wrap",
       justifyContent: "center",
       overflow: "scroll",
-      height: "100vh",
+      height: "80vh",
+      "&::-webkit-scrollbar": {
+        width: "0.4em",
+      },
+      "&::-webkit-scrollbar-thumb": {
+        background: `linear-gradient(top, ${theme.palette.primary.main}, ${theme.palette.primary.light})`,
+        borderRadius: "5px",
+      },
     },
     post: {
       width: "20em",
